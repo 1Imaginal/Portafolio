@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tareas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="tareas.js"></script>
+</head>
+<body>
+    <div id="navbar">
+        <table id="links">
+            <tr>
+                <td><a href="index.html">Inicio/About me</a></td>
+                <td><a href="practica1.html">Practica 2 HTML</a></td>
+                <td><a href="tablas.html">Practica 3 tablas</a></td>
+                <td><a href="indicepractica4.html">Practica 4 JavaScript</a></td>
+                <td><a href="tabla.html">Practica 5 JavaScript</a></td>
+                <td><a href="listadetareas.html">Lista de tareas</a></td>
+                <td><a href="multimedia.html">Multimedia</a></td>
+            </tr>
+        </table> 
+    </div>
+    <h1>Lista de tareas</h1>
+    <table id="tareas">
+        <tr>
+            <input type="text" name="tarea" id="tarea"> <button type="button" onclick="agregar()">Agregar tarea</button>
+        </tr>
+        <tbody id="adiciones"></tbody>
+        <button type="button" onclick="limpiar()">Limpiar lista</button>
+    </table>
+</body>
+</html>

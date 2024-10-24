@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="tabla.js"></script>
+</head>
+<body>
+    <div id="navbar">
+        <table id="links">
+            <tr>
+                <td><a href="index.html">Inicio/About me</a></td>
+                <td><a href="practica1.html">Practica 2 HTML</a></td>
+                <td><a href="tablas.html">Practica 3 tablas</a></td>
+                <td><a href="indicepractica4.html">Practica 4 JavaScript</a></td>
+                <td><a href="tabla.html">Practica 5 JavaScript</a></td>
+                <td><a href="listadetareas.html">Lista de tareas</a></td>
+                <td><a href="multimedia.html">Multmedia</a></td>
+            </tr>
+        </table> 
+    </div>
+    <h1>Registro de usuarios</h1>
+    <form action="">
+        Nombre: <input type="text" name="nombre" id="name"> <br>
+        Correo: <input type="email" name="correo" id="email">
+        <h3>Ocupacion</h3>
+        <input type="checkbox" name="ocupacion" id="estudiante" value="Estudiante">
+        <label for="estudiante">Estudiante</label>
+        <input type="checkbox" name="ocupacion" id="trabajador" value="Trabajador">
+        <label for="trabajador">Trabajador</label>
+        <input type="checkbox" name="ocupacion" id="otra" value="Otro">
+        <label for="otra">Otra</label>
+        <h3>Genero</h3>
+        <label for="mas">Masculino</label>
+        <input type="radio" name="genero" id="mas" value="Masculino"> <br>
+        <label for="fem">Femenino</label>
+        <input type="radio" name="genero" id="fem" value="Femenino"> <br>
+        <label for="otro">Otro</label>
+        <input type="radio" name="genero" id="otro" value="Otro"> <br> <br>
+        Fecha de nacimiento: <input type="datetime-local" name="fecha" id="fecha"> <br>
+        Color favorito: <input type="color" name="color" id="color"> <br>
+        Barrita: <input type="range" name="barrita" id="barrita"> <br>
+    </form>
+    <button id="prac5" type="button" onclick="registrar()">Registrar</button>
+    <h2>Usuarios</h2>
+    <table id="usuarios">
+        <thead id="headers">
+            <tr id="headers">
+                <th>Nombre</th><th>Correo</th><th>Ocupacion</th><th>Genero</th><th>Fecha de nacimiento</th><th>Color Favorito</th><th>Barrita</th>
+            </tr>
+        </thead>
+        <tbody id="registros"></tbody>
+    </table>
+</body>
+</html>

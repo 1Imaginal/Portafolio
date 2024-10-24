@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="../style.css">
+    <script type="text/javascript" src="formulario.js"></script>
+</head>
+<body>
+    <form action=""></form>
+        <div id="navbar">
+            <table id="links">
+                <tr>
+                    <td><a href="../index.html">Inicio/About me</a></td>
+                    <td><a href="../practica1.html">Practica 2 HTML</a></td>
+                    <td><a href="../tablas.html">Practica 3 tablas</a></td>
+                    <td><a href="../indicepractica4.html">Practica 4 JavaScript</a></td>
+                    <td><a href="../tabla.html">Practica 5 JavaScript</a></td>
+                    <td><a href="../listadetareas.html">Lista de tareas</a></td>
+                    <td><a href="../multimedia.html">Multimedia</a></td>
+                </tr>
+            </table> 
+        </div>
+    <h1>Formulario</h1>
+        Nombre: <input type="text" name="nombre" id="name"><br>
+        Correo: <input type="email" name="correo" id="mail"><br>
+        Edad: <input type="number" name="edad" id="age" min="0" max="120"><br>
+        <input type="radio" name="genero" id="male" value="Hombre">Hombre
+        <input type="radio" name="genero" id="female" value="Mujer">Mujer
+        <input type="radio" name="genero" id="other" value="Otro">Otro <br>
+        Fecha de nacimiento: <input type="date" name="fecha" id="birth"><br>
+        Color favorito: <input type="color" name="color" id="col"><br>
+        <button type="button" onclick="formulario()">Enviar</button>
+        <br>
+        <p id="resultado"></p> <a href="../indicepractica4.html">Volver al indice de la practica 4</a>
+    </form>
+</body>
+</html>

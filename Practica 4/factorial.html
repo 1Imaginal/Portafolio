@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+    <link rel="stylesheet" href="../style.css">
+    <script>
+        function leer() {
+            valor = document.getElementById("numero").value;
+            var x = parseInt(valor);
+            console.log(x);
+            // Llamada a la funcion factorial
+            factorial(x);
+        }
+
+        function factorial(x) {
+            if(x>=0){
+                var f = 1;
+                for(i=1; i<=x; i++) {
+                    f *= i;
+                    console.log(f);
+                }
+            var salida = x + "! = " + f;
+            document.getElementById("resultado").innerHTML = salida;
+            } else {
+                document.getElementById("resultado").innerHTML = "Intenta con un numero que no sea negativo";
+            }
+        }
+
+        function borrar() {
+            document.getElementById("resultado").innerHTML = "";
+            document.getElementById("numero").value = "";
+        }
+    </script>
+</head>
+<body>
+    <div id="navbar">
+        <table id="links">
+            <tr>
+                <td><a href="../index.html">Inicio/About me</a></td>
+                <td><a href="../practica1.html">Practica 2 HTML</a></td>
+                <td><a href="../tablas.html">Practica 3 tablas</a></td>
+                <td><a href="indicepractica4.html">Practica 4 JavaScript</a></td>
+                <td><a href="../tabla.html">Practica 5 JavaScript</a></td>
+                <td><a href="../listadetareas.html">Lista de tareas</a></td>
+                <td><a href="../multimedia.html">Multimedia</a></td>
+            </tr>
+        </table> 
+    </div>
+    <h1>Factorial ciclico</h1>
+    <p>Ingrese un numero entero positivo.</p>
+    <form action="">
+        <input type="number" min="0" id="numero">
+    </form>
+    <button onclick="leer()">Calcular</button>
+    <button onclick="borrar()">Borrar</button>
+    <p id="resultado"></p> <a href="../indicepractica4.html">Volver al indice practica 4</a>
+    <!-- -->
+</body>
+</html>

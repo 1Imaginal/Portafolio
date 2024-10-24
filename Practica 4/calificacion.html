@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calificacion</title>
+    <link rel="stylesheet" href="../style.css">
+    <script>
+        function calificar(){
+            var x = document.getElementById("cal").value;
+            if(x >= 0 && x< 6) {
+                document.getElementById("resultado").innerHTML = "NA";
+            } else if(x>=6 && x<7.5) {
+                document.getElementById("resultado").innerHTML = "S";
+            } else if(x>= 7.5 && x<9) {
+                document.getElementById("resultado").innerHTML = "B";
+             } else if(x>=9 && x<10) {
+                document.getElementById("resultado").innerHTML = "MB";
+             } else if(x==10) {
+                document.getElementById("resultado").innerHTML = "LAP";
+             } else {
+                document.getElementById("resultado").innerHTML = "Calificacion no valida";
+             }
+        }
+    </script>
+</head>
+<body>
+    <div id="navbar">
+        <table id="links">
+            <tr>
+                <td><a href="../index.html">Inicio/About me</a></td>
+                <td><a href="../practica1.html">Practica 2 HTML</a></td>
+                <td><a href="../tablas.html">Practica 3 tablas</a></td>
+                <td><a href="../indicepractica4.html">Practica 4 JavaScript</a></td>
+                <td><a href="../tabla.html">Practica 5 JavaScript</a></td>
+                <td><a href="../listadetareas.html">Lista de tareas</a></td>
+                <td><a href="../multimedia.html">Multimedia</a></td>
+            </tr>
+        </table> 
+    </div>
+    <h1>Calificacion</h1>
+    Ingrese su calificacion: <input type="number" name="calificacion" id="cal" min="0" max="10">
+    <button type="button" onclick="calificar()">Evaluar</button>
+    <p id="resultado"></p> <a href="../indicepractica4.html">Volver al indice practica 4</a>
+</body>
+</html>
